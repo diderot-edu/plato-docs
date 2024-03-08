@@ -21,7 +21,7 @@ pip install plato
 ```
 from Plato import Plato
 
-client = Plato("f84KDHf93ndInd3")
+client = Plato(<YOUR_API_KEY_HERE>)
 client.upload(file="customer-support-docs.docx")
 client.create("What's our return policy on items 30 days late?")
 ```

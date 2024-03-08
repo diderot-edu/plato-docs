@@ -15,9 +15,9 @@ File/folder uploads are preferred to website uploads. Currently, Plato supports 
 
 ```
 from Plato import Plato
+import os
 
-client = Plato()
-client.set_api_key(<YOUR_API_KEY_HERE>)
+client = Plato(os.environ["PLATO_API_KEY"])
 ```
 
 ## How to Upload
@@ -29,20 +29,20 @@ All uploads take place through the `upload` function. You specify different args
 To upload a file,
 
 ```
-client.upload(file_name="../examples/test.md")
+client.upload(file="../examples/test.md")
 ```
 
-where the `file_name` specified should be relative to your current working directory. Plato will search for this file and send it to us for processing.
+where the `file` specified should be relative to your current working directory. Plato will search for this file and send it to us for processing.
 
 ### Folders
 
 To upload a folder,
 
 ```
-client.upload(directory_name="examples/")
+client.upload(dir="examples/")
 ```
 
-where `directory_name` is the relative path of the folder you want to upload. Plato recursively searches through the specified directory and uploads all files contained. <ins>Make sure that all files in the folder specified are **accepted file types**</ins>.
+where `dir` is the relative path of the folder you want to upload. Plato recursively searches through the specified directory and uploads all files contained. <ins>Make sure that all files in the folder specified are **accepted file types**</ins>. Files that aren't supported will be skipped and thus not uploaded.
 
 ### Websites
 
