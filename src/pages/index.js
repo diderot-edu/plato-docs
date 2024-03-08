@@ -29,8 +29,8 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Hello from Diderot`}
-      description="Description will go into a meta tag in <head />">
+      title={`Plato Documentation`}
+      description="RAG">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
