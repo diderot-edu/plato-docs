@@ -29,7 +29,7 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Plato Documentation`}
+      title={"Plato Documentation"}
       description="RAG">
       <HomepageHeader />
       <main>

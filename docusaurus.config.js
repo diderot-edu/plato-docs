@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Diderot',
+  title: 'Plato',
   tagline: 'RAG in 5 lines of code',
   favicon: 'img/favicon.svg',
 
