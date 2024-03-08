@@ -1,0 +1,8 @@
+{
+  "label": "Features",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore Plato's features! Upload your documents in various formats, and have a RAG model ready-to-go instantly."
+  }
+}
